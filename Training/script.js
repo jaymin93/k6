@@ -3,9 +3,9 @@ import { check } from 'k6';
 import { jUnit, textSummary } from 'https://jslib.k6.io/k6-summary/0.0.1/index.js';
 export const options = {
   stages: [
-    { duration: '10s', target: 10 },
+    { duration: '10s' },
     { duration: '20s' },
-    { duration: '10s', target: 5},
+    { duration: '10s'},
   ],
   thresholds: {
     http_req_duration: ['p(95)<250'],
