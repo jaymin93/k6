@@ -10,6 +10,6 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get('https://k6ldtst.azurewebsites.net/WeatherForecast');
+  const res = http.get('https://k6httploadtesr.azurewebsites.net/api/Function1?code=f6F06agGFO7yp2K1GEkOjD4ZbR27QayHv2Acopy/b6g9VDha9NPJ6w==');
   sleep(1);
 }
