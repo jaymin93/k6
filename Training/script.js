@@ -20,9 +20,9 @@ export default function () {
   });
 }
 export function handleSummary(data) {
-  let filepath = `./result.xml`;
+  let filepath = `./TEST.xml`;
     return {
         'stdout': textSummary(data, { indent: ' ', enableColors: true}), 
-        './results.xml': jUnit(data), 
+        './TEST.xml': jUnit(data), 
     }
 }
